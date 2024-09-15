@@ -81,11 +81,17 @@ SettingPlaylist::SettingPlaylist(CHistoryMonitor *point,
 
     ui->table->setColumnCount(5);
     QStringList m_Header;
-    m_Header.append(QString::fromLocal8Bit(""));
-    m_Header.append(QString::fromLocal8Bit("英雄"));
-    m_Header.append(QString::fromLocal8Bit("K/D/A"));
-    m_Header.append(QString::fromLocal8Bit("开始时间"));
-    m_Header.append(QString::fromLocal8Bit("对局ID"));
+    m_Header.append((""));
+    m_Header.append(("英雄"));
+    m_Header.append(("K/D/A"));
+    m_Header.append(("开始时间"));
+    m_Header.append(("对局ID"));
+
+    //m_Header.append(QString::fromLocal8Bit(""));
+    //m_Header.append(QString::fromLocal8Bit("英雄"));
+    //m_Header.append(QString::fromLocal8Bit("K/D/A"));
+    //m_Header.append(QString::fromLocal8Bit("开始时间"));
+    //m_Header.append(QString::fromLocal8Bit("对局ID"));
 
     //this->setWindowFlags(Qt::FramelessWindowHint);  // 去掉标题栏
     setWindowFlags(this->windowFlags() | Qt::FramelessWindowHint);
