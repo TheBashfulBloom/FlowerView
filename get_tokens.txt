@@ -1,0 +1,4 @@
+client_token=2IaTgWjGuQKHmkQWhMa6BA
+client_port=64358
+region=NA
+client_full_path=D:/Riot Games/League of Legends/LeagueClientUx.exe

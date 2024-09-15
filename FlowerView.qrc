@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/FlowerView">
+        <file>settingplaylist.h</file>
+        <file>images/button_pause.png</file>
+        <file>images/button_pause_disable.png</file>
+        <file>images/button_pop.png</file>
+        <file>images/button_start.png</file>
+        <file>images/button_start_disable.png</file>
+        <file>images/280082-1504291G411.jpg</file>
+        <file>images/button_pop_disable.png</file>
+        <file>images/light/spirit_blossom_blue.png</file>
+        <file>images/light/spirit_blossom_gray.png</file>
+        <file>images/light/spirit_blossom_green.png</file>
+        <file>images/light/spirit_blossom_pink.png</file>
+        <file>images/light/spirit_blossom_white.png</file>
+        <file>images/light/spirit_blossom_red.png</file>
+    </qresource>
+</RCC>
