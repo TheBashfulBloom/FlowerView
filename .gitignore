@@ -370,3 +370,4 @@ images/storage/
 images/dep/
 images/assets
 release/
+*.swp
