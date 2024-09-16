@@ -10,6 +10,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\base.h" />
+    <ClInclude Include="src\ChampionDataManager.h" />
+    <ClInclude Include="src\GamesData.h" />
+    <ClInclude Include="src\id_array.h" />
+    <ClInclude Include="src\Timer.h" />
+    <QtMoc Include="src\settings.h" />
+    <QtMoc Include="src\settingplaylist.h" />
+    <QtMoc Include="src\monitor.h" />
+    <QtMoc Include="src\FlowerView.h" />
+    <QtMoc Include="src\comm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base.cpp" />
+    <ClCompile Include="src\ChampionDataManager.cpp" />
+    <ClCompile Include="src\comm.cpp" />
+    <ClCompile Include="src\FlowerView.cpp" />
+    <ClCompile Include="src\GamesData.cpp" />
+    <ClCompile Include="src\id_array.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\monitor.cpp" />
+    <ClCompile Include="src\settingplaylist.cpp" />
+    <ClCompile Include="src\settings.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="src\FlowerView.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\FlowerView.ui" />
+    <QtUic Include="src\settingplaylist.ui" />
+    <QtUic Include="src\settings.ui" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D2805817-D355-4046-8E2D-D7388031D8B4}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
@@ -76,7 +109,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\code\FlowerView\curl\static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\code\FlowerView\src;E:\code\FlowerView\curl\static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -113,39 +146,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <QtRcc Include="FlowerView.qrc" />
-    <QtUic Include="FlowerView.ui" />
-    <QtUic Include="settingplaylist.ui" />
-    <QtUic Include="settings.ui" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="base.cpp" />
-    <ClCompile Include="ChampionDataManager.cpp" />
-    <ClCompile Include="comm.cpp" />
-    <ClCompile Include="FlowerView.cpp" />
-    <ClCompile Include="GamesData.cpp" />
-    <ClCompile Include="id_array.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="monitor.cpp" />
-    <ClCompile Include="settingplaylist.cpp" />
-    <ClCompile Include="settings.cpp" />
-    <ClCompile Include="Timer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="FlowerView.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="base.h" />
-    <ClInclude Include="ChampionDataManager.h" />
-    <ClInclude Include="Timer.h" />
-    <QtMoc Include="comm.h" />
-    <ClInclude Include="GamesData.h" />
-    <ClInclude Include="id_array.h" />
-    <QtMoc Include="monitor.h" />
-    <QtMoc Include="settingplaylist.h" />
-    <QtMoc Include="settings.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />
