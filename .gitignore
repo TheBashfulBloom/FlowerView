@@ -371,3 +371,5 @@ images/dep/
 images/assets
 release/
 *.swp
+play_replay.bat
+get_tokens.txt
